@@ -2,11 +2,15 @@
 
 ## Sigmoid Function
 
+![Sigmoid](./images/0218/01_sigmoid.png)  
+
+The sigmoid function is:  
+
 $$
 S(t) = \frac{1}{1 + e^{-t}}
 $$
 
-![Sigmoid](./images/0218/01_sigmoid.png)  
+
 The equation for the output \( y \) is:
 
 $$
