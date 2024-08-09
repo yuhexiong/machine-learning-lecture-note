@@ -105,6 +105,8 @@ y = f_{\theta}(x)
 $$
 
 Define \(L(θ)\), find \( θ^* \)
+
+
 $$
 \Rightarrow y = f_{\theta^*}(x) \quad \text{to label testing data}
 $$
@@ -155,6 +157,8 @@ In fact, the batches have been randomly divided, and batch 1 is used to calculat
 $$
 f(x) = max(0, x)
 $$
+
+
 $$
 \Rightarrow cmax(0, b + w \cdot x_1)
 $$
@@ -169,6 +173,8 @@ $$
 $$
 y = b + \sum_{i} c_i \cdot \text{sigmoid}\left(b_i + \sum_{j} \left(w_{ij} \cdot x_j\right)\right)
 $$
+
+
 $$
 \Rightarrow 
 y = b + \sum_{2i} c_i \cdot max\left(0, b_i + \sum_{j} \left(w_{ij} \cdot x_j\right)\right)
@@ -183,5 +189,5 @@ layers ⇒ deep → deep learning
 </p>
 
 deeper  
-(1) training data ✔  
+(1) training data ✓  
 (2) unseen data ✗ ⇒ overfitting  
