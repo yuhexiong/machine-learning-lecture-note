@@ -8,7 +8,10 @@ Note for lecture(Hung-yi Lee YouTube)
 
 ## Sigmoid Function
 
-![Sigmoid](./images/0218/01_sigmoid.png)  
+<p align="center">
+  <img src="./images/0218/01_sigmoid.png" alt="Sigmoid"/>
+</p>
+
 
 The sigmoid function is:  
 
@@ -32,11 +35,17 @@ where:
 
 ## Hard Sigmoid
 
-![Hard Sigmoid](./images/0218/02_hard_sigmoid.png)
+<p align="center">
+  <img src="./images/0218/02_hard_sigmoid.png" alt="Hard Sigmoid"/>
+</p>
+
 
 ### Combining Hard Sigmoid
 
-![Combining Hard Sigmoid](./images/0218/03_combine_hard_sigmoid.png)
+<p align="center">
+  <img src="./images/0218/03_combine_hard_sigmoid.png" alt="Combining Hard Sigmoid"/>
+</p>
+
 
 The formula for the combining hard sigmoid is:
 
@@ -58,7 +67,10 @@ $$
 y = b + \sum_{i} c_i \cdot \text{sigmoid}\left(b_i + \sum_{j} \left(w_{ij} \cdot x_j\right)\right)
 $$
 
-![Combine Sigmoid Function](./images/0218/04_combine_sigmoid_function.png)  
+<p align="center">
+  <img src="./images/0218/04_combine_sigmoid_function.png" alt="Combine Sigmoid Function"/>
+</p>
+
 
 
 Here's a polished and organized version of your notes:
@@ -109,7 +121,10 @@ g = \nabla L(\theta^0) = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-![Gradient](./images/0218/05_gradient.png)
+<p align="center">
+  <img src="./images/0218/05_gradient.png" alt="Gradient"/>
+</p>
+
 <!-- $$
 \begin{bmatrix}
 \theta_1^1 \\
@@ -146,7 +161,10 @@ $$
 
 2ReLU ⇒ Hard Sigmoid
 
-![Combine Relu](./images/0218/06_combine_relu.png)  
+<p align="center">
+  <img src="./images/0218/06_combine_relu.png" alt="Combine Relu"/>
+</p>
+
 
 $$
 y = b + \sum_{i} c_i \cdot \text{sigmoid}\left(b_i + \sum_{j} \left(w_{ij} \cdot x_j\right)\right)
@@ -160,7 +178,10 @@ Generally called those as Activation Function
 
 ### Neural Network
 layers ⇒ deep → deep learning    
-![Neural Network](./images/0218/07_neural_network.png)
+<p align="center">
+  <img src="./images/0218/07_neural_network.png" alt="Neural Network"/>
+</p>
+
 deeper  
 (1) training data ✔  
 (2) unseen data ✗ ⇒ overfitting  
