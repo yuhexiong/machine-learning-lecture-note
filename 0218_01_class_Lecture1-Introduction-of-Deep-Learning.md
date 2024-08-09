@@ -109,7 +109,8 @@ g = \nabla L(\theta^0) = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-$$
+![Gradient](./images/0218/05_gradient.png)
+<!-- $$
 \begin{bmatrix}
 \theta_1^1 \\
 \theta_2^1 \\
@@ -117,8 +118,8 @@ $$
 \end{bmatrix}
 \leftarrow
 \begin{bmatrix}
-\theta_0^1 \\
-\theta_0^1 \\
+\theta_2^0 \\
+\theta_1^0 \\
 \vdots \\
 \end{bmatrix} - 
 \begin{bmatrix}
@@ -126,7 +127,7 @@ $$
 \eta \frac{\partial L}{\partial \theta_2} \bigg|_{\theta = \theta^0} \\
 \vdots \\
 \end{bmatrix}
-$$
+$$ -->
 
 $$
 \theta^1 \leftarrow \theta^0 - \eta g \quad \text{(update)}
@@ -145,7 +146,7 @@ $$
 
 2ReLU ⇒ Hard Sigmoid
 
-![Combine Relu](./images/0218/05_combine_relu.png)  
+![Combine Relu](./images/0218/06_combine_relu.png)  
 
 $$
 y = b + \sum_{i} c_i \cdot \text{sigmoid}\left(b_i + \sum_{j} \left(w_{ij} \cdot x_j\right)\right)
@@ -159,7 +160,7 @@ Generally called those as Activation Function
 
 ### Neural Network
 layers ⇒ deep → deep learning    
-![Neural Network](./images/0218/06_neural_network.png)
+![Neural Network](./images/0218/07_neural_network.png)
 deeper  
 (1) training data ✔  
 (2) unseen data ✗ ⇒ overfitting  
