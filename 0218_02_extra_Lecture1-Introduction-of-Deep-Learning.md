@@ -10,4 +10,71 @@ Note for lecture(Hung-yi Lee YouTube)
 
 ## Deep Learning
 
-TODO  
+(1) Define a set of function  
+(2) Goodness of function  
+(3) Pick the best function  
+
+### Fully Connected Feedforward
+
+Layer 1: input layer  
+Layer 2: hidden layer  
+...  
+Layer N-1: hidden layer (feature extractor replacing feature engineering)  
+Layer N: output layer  
+
+![Fully Connected](./images/0218/08_fully_connected.png)  
+
+
+Write the calculation as a matrix:  
+$$
+\sigma \left(
+\begin{bmatrix}
+1 & -2 \\
+-1 & 1
+\end{bmatrix}
+\begin{bmatrix}
+1 \\
+-1
+\end{bmatrix}
++
+\begin{bmatrix}
+1 \\
+0
+\end{bmatrix}
+\right)
+=
+\begin{bmatrix}
+0.98 \\
+0.12
+\end{bmatrix}
+$$
+
+Example: Handwriting Digit Recognition  
+Input 16*16: 256 dim, output 0~9: 10 dim  
+
+### Cross Entropy
+
+$$
+C \Rightarrow \mathcal{L} = \sum C^n \quad \text{gradient descent}
+$$
+
+#### Universal Approximation Theorem
+Any continuous f
+
+$$
+f: \mathcal{R}^N \rightarrow \mathcal{R}^M
+$$
+
+can by realized by a network with one hidden layer(with enough hidden neurons)  
+
+## Backpropagation
+
+$$
+\mathcal{L}(\theta) = \sum_{n=1}^{N} C^n(\theta)
+$$
+
+$$
+\frac{\partial}{\partial w} \mathcal{L}(\theta) = \sum_{n=1}^{N} \frac{\partial C^n(\theta)}{\partial w}
+$$
+
+![Backpropagation](./images/0218/09_backpropagation.png)
