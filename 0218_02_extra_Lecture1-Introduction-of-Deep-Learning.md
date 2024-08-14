@@ -22,10 +22,13 @@ Layer 2: hidden layer
 Layer N-1: hidden layer (feature extractor replacing feature engineering)  
 Layer N: output layer  
 
-![Fully Connected](./images/0218/08_fully_connected.png)  
-
+<p align="center">
+  <img src="./images/0218/08_fully_connected.png" alt="Fully Connected"/>
+</p>
 
 Write the calculation as a matrix:  
+
+
 $$
 \sigma \left(
 \begin{bmatrix}
@@ -77,4 +80,6 @@ $$
 \frac{\partial}{\partial w} \mathcal{L}(\theta) = \sum_{n=1}^{N} \frac{\partial C^n(\theta)}{\partial w}
 $$
 
-![Backpropagation](./images/0218/09_backpropagation.png)
+<p align="center">
+  <img src="./images/0218/09_backpropagation.png" alt="Backpropagation"/>
+</p>
