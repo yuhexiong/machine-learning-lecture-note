@@ -28,8 +28,11 @@ Layer N: output layer
 
 Write the calculation as a matrix:  
 
+<p align="center">
+  <img src="./images/0218/09_matrix.png" alt="Matrix"/>
+</p>
 
-$$
+<!-- $$
 \sigma \left(
 \begin{bmatrix}
 1 & -2 \\
@@ -50,7 +53,7 @@ $$
 0.98 \\
 0.12
 \end{bmatrix}
-$$
+$$ -->
 
 Example: Handwriting Digit Recognition  
 Input 16*16: 256 dim, output 0~9: 10 dim  
@@ -81,5 +84,5 @@ $$
 $$
 
 <p align="center">
-  <img src="./images/0218/09_backpropagation.png" alt="Backpropagation"/>
+  <img src="./images/0218/10_backpropagation.png" alt="Backpropagation"/>
 </p>
