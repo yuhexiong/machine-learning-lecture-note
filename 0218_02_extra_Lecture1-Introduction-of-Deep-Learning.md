@@ -114,41 +114,41 @@ $$
 
 
 $$
-\text{where} \frac{\partial a}{\partial z} \quad  \text{ is the sigmoid derivative.}
+\text{where} \quad \frac{\partial a}{\partial z} \quad \text{ is the sigmoid derivative.}
 $$
 
 Gradient of \( c \) with respect to \( a \):
 
 $$
-\frac{\partial c}{\partial a} = \frac{\partial z^{'}}{\partial a} \cdot \frac{\partial c}{\partial z^{'}} + \frac{\partial z^{''}}{\partial a} \cdot \frac{\partial c}{\partial z^{''}}
+\frac{\partial c}{\partial a} = \frac{\partial z'}{\partial a} \cdot \frac{\partial c}{\partial z'} + \frac{\partial z''}{\partial a} \cdot \frac{\partial c}{\partial z''}
 $$
 
 Given:
 
 $$
-\frac{\partial z^{'}}{\partial a} = w_3, \quad \frac{\partial z^{''}}{\partial a} = w_4
+\frac{\partial z'}{\partial a} = w_3, \quad \frac{\partial z''}{\partial a} = w_4
 $$
 
 Final expression:
 
 $$
-\frac{\partial c}{\partial z} = \sigma^{'}(z) \cdot \left[w_3 \cdot \frac{\partial c}{\partial z^{'}} + w_4 \cdot \frac{\partial c}{\partial z^{''}}\right]
+\frac{\partial c}{\partial z} = \sigma'(z) \cdot \left[w_3 \cdot \frac{\partial c}{\partial z'} + w_4 \cdot \frac{\partial c}{\partial z''}\right]
 $$
 
 
 $$
-\text{where} \quad  \sigma^{'}(z) \quad  \text{ is constant.}
+\text{where} \quad  \sigma'(z) \quad  \text{ is constant.}
 $$
 
 **Case 1. Output Layer**  
 
 $$
- \frac{\partial c}{\partial z^{'}} =  \frac{\partial y_1}{\partial z^{'}} \cdot \frac{\partial c}{\partial y_1}
+ \frac{\partial c}{\partial z'} =  \frac{\partial y_1}{\partial z'} \cdot \frac{\partial c}{\partial y_1}
 $$
 
 
 $$
- \frac{\partial c}{\partial z^{''}} =  \frac{\partial y_2}{\partial z^{''}} \cdot \frac{\partial c}{\partial y_2}
+ \frac{\partial c}{\partial z''} =  \frac{\partial y_2}{\partial z''} \cdot \frac{\partial c}{\partial y_2}
 $$
 
 
@@ -162,11 +162,11 @@ Continue to the next layer until reaching the Output Layer.
 If we hope function is smooth, smaller wi is better  
 
 $$
-
 y = b + \sum w_i x_i
-
 $$
 
+
+so define loss function as:  
 
 $$
 L = \sum_n \left(\hat{y}^n - \left( b + \sum w_i x_i \right)\right)^2 + \lambda \sum (w_i)^2
