@@ -86,3 +86,91 @@ $$
 <p align="center">
   <img src="./images/0218/10_backpropagation.png" alt="Backpropagation"/>
 </p>
+
+
+The derivative of the cost \( c \) with respect to weight \( w \):
+
+$$
+\frac{\partial c}{\partial w} = \frac{\partial z}{\partial w} \cdot \frac{\partial c}{\partial z}
+$$
+
+**Forward pass**
+
+$$
+z = x_1w_1 + x_2w_2 + b
+$$
+
+Partial derivatives:
+
+$$
+\frac{\partial z}{\partial w_1} = x_1, \quad \frac{\partial z}{\partial w_2} = x_2
+$$
+
+**Backward pass**
+
+$$
+\frac{\partial c}{\partial z} = \frac{\partial a}{\partial z} \cdot \frac{\partial c}{\partial a}
+$$
+
+
+$$
+\text{where} \frac{\partial a}{\partial z} \quad  \text{ is the sigmoid derivative.}
+$$
+
+Gradient of \( c \) with respect to \( a \):
+
+$$
+\frac{\partial c}{\partial a} = \frac{\partial z^{'}}{\partial a} \cdot \frac{\partial c}{\partial z^{'}} + \frac{\partial z^{''}}{\partial a} \cdot \frac{\partial c}{\partial z^{''}}
+$$
+
+Given:
+
+$$
+\frac{\partial z^{'}}{\partial a} = w_3, \quad \frac{\partial z^{''}}{\partial a} = w_4
+$$
+
+Final expression:
+
+$$
+\frac{\partial c}{\partial z} = \sigma^{'}(z) \cdot \left[w_3 \cdot \frac{\partial c}{\partial z^{'}} + w_4 \cdot \frac{\partial c}{\partial z^{''}}\right]
+$$
+
+
+$$
+\text{where} \quad  \sigma^{'}(z) \quad  \text{ is constant.}
+$$
+
+**Case 1. Output Layer**  
+
+$$
+ \frac{\partial c}{\partial z^{'}} =  \frac{\partial y_1}{\partial z^{'}} \cdot \frac{\partial c}{\partial y_1}
+$$
+
+
+$$
+ \frac{\partial c}{\partial z^{''}} =  \frac{\partial y_2}{\partial z^{''}} \cdot \frac{\partial c}{\partial y_2}
+$$
+
+
+
+**Case 2. Not Output Layer**  
+Continue to the next layer until reaching the Output Layer.  
+
+
+## Regularization
+
+If we hope function is smooth, smaller wi is better  
+
+$$
+
+y = b + \sum w_i x_i
+
+$$
+
+
+$$
+L = \sum_n \left(\hat{y}^n - \left( b + \sum w_i x_i \right)\right)^2 + \lambda \sum (w_i)^2
+$$
+
+## Classifier
+
