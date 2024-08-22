@@ -199,8 +199,10 @@ $$
 
 Find the parameters 𝜇∗ and 𝜎∗ that maximize the likelihood:  
 
+
 $$
 \mu^*, \sigma^* = \text{arg} \underset{\mu, \sigma}{\text{max}} \, L(\mu, \sigma)
 $$
+
 
 
