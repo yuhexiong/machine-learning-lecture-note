@@ -174,3 +174,29 @@ $$
 
 ## Classifier
 
+![Classifier](./images/0218/11_classifier.png)  
+
+we have
+$$
+P(x) =P(x \mid C_1) \cdot P(C_1) + P(x \mid C_2) \cdot P(C_2)
+$$
+
+
+so according Bayes' theorem:  
+$$
+P(C_1 \mid x) = \frac{P(x \mid C_1) \cdot P(C_1)}{P(x \mid C_1) \cdot P(C_1) + P(x \mid C_2) \cdot P(C_2)}
+$$
+
+If x not in C1 of training data but x definitly in Class 1, use C1 to find its Gaussian Distribution.  
+
+$$
+L(\mu, \sigma) = f_{\mu, \sigma}(x^1) \cdot f_{\mu, \sigma}(x^2) \cdot \ldots \cdot f_{\mu, \sigma}(x^N)
+$$
+
+
+
+$$
+\mu^*, \sigma^* = \text{arg} \underset{\mu, \sigma}{\text{max}} \, L(\mu, \sigma)
+$$
+
+
