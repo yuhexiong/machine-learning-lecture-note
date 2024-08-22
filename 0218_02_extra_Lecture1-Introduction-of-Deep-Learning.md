@@ -213,3 +213,12 @@ $$ -->
 
 
 
+$$
+\mu^*= \frac{1}{N} \sum_{n=1}^{N} x^n, \quad 
+\sigma^* = \frac{1}{N} \sum_{n=1}^{N} (x^n - \mu^*)(x^n - \mu^*)^T
+$$
+
+
+After substituting the values, we obtain the probability of 
+x, if P(C1|x) > 0.5, x belong of class 1.  
+
