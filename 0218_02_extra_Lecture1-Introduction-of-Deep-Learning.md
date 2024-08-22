@@ -176,13 +176,17 @@ $$
 
 ![Classifier](./images/0218/11_classifier.png)  
 
-we have
+Given
+
+
 $$
 P(x) =P(x \mid C_1) \cdot P(C_1) + P(x \mid C_2) \cdot P(C_2)
 $$
 
 
-so according Bayes' theorem:  
+Bayes' theorem:  
+
+
 $$
 P(C_1 \mid x) = \frac{P(x \mid C_1) \cdot P(C_1)}{P(x \mid C_1) \cdot P(C_1) + P(x \mid C_2) \cdot P(C_2)}
 $$
@@ -193,7 +197,7 @@ $$
 L(\mu, \sigma) = f_{\mu, \sigma}(x^1) \cdot f_{\mu, \sigma}(x^2) \cdot \ldots \cdot f_{\mu, \sigma}(x^N)
 $$
 
-
+Find the parameters 𝜇∗ and 𝜎∗ that maximize the likelihood:  
 
 $$
 \mu^*, \sigma^* = \text{arg} \underset{\mu, \sigma}{\text{max}} \, L(\mu, \sigma)
