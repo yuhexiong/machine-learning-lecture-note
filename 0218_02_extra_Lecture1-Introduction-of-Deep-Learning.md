@@ -212,6 +212,8 @@ $$ -->
 </p>
 
 
+where  
+
 
 $$
 \mu^*= \frac{1}{N} \sum_{n=1}^{N} x^n, \quad 
