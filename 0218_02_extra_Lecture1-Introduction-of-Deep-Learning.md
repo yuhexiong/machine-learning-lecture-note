@@ -174,7 +174,9 @@ $$
 
 ## Classifier
 
-![Classifier](./images/0218/11_classifier.png)  
+<p align="center">
+  <img src="./images/0218/11_classifier.png" alt="Classifier"/>
+</p>
 
 Given
 
@@ -200,9 +202,14 @@ $$
 Find the parameters 𝜇∗ and 𝜎∗ that maximize the likelihood:  
 
 
-$$
+<!-- $$
 \mu^*, \sigma^* = \text{arg} \underset{\mu, \sigma}{\text{max}} \, L(\mu, \sigma)
-$$
+$$ -->
+
+
+<p align="center">
+  <img src="./images/0218/12_mu_sigma_parameter.png" alt="Mu Sigma Parameter"/>
+</p>
 
 
 
