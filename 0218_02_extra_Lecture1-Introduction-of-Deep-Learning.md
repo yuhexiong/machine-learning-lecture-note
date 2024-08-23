@@ -196,7 +196,7 @@ $$
 If x not in C1 of training data but x definitly in Class 1, use C1 to find its Gaussian Distribution.  
 
 $$
-L(\mu, \sigma) = f_{\mu, \sigma}(x^1) \cdot f_{\mu, \sigma}(x^2) \cdot \ldots \cdot f_{\mu, \sigma}(x^N)
+L(\mu, \sigma) = f_{\mu, \sigma}(x_1) \cdot f_{\mu, \sigma}(x_2) \cdot \ldots \cdot f_{\mu, \sigma}(x_N)
 $$
 
 Find the parameters 𝜇∗ and 𝜎∗ that maximize the likelihood:  
@@ -216,11 +216,23 @@ where
 
 
 $$
-\mu^*= \frac{1}{N} \sum_{n=1}^{N} x^n, \quad 
-\sigma^* = \frac{1}{N} \sum_{n=1}^{N} (x^n - \mu^*)(x^n - \mu^*)^T
+\mu^*= \frac{1}{N} \sum_{n=1}^{N} x_n, \quad 
+\sigma^* = \frac{1}{N} \sum_{n=1}^{N} (x_n - \mu^*)(x_n - \mu^*)^T
 $$
 
+
+<!-- <p align="center">
+  <img src="./images/0218/13_mu_sigma_best_parameter.png" alt="Mu Sigma Best Parameter"/>
+</p> -->
 
 After substituting the values, we obtain the probability of 
 x, if P(C1|x) > 0.5, x belong of class 1.  
 
+
+### Modifying Model
+
+Given class 1, class 2, same σ, less parameter.  
+
+$$
+L(\mu_1, \mu_2, \sigma) = f_{\mu_1,_1 \sigma}(x_1) \cdot f_{\mu_1, \sigma}(x_2) \cdot \ldots \cdot f_{\mu_1, \sigma}(x_{N_1}) \cdot f_{\mu_2, \sigma}(x_{N_1+1}) \ldots \cdot f_{\mu_2, \sigma}(x_{N_1+N_2}) 
+$$
