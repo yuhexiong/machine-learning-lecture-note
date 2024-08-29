@@ -241,3 +241,70 @@ $$ -->
 <p align="center">
   <img src="./images/0218/14_likelihood_of_two_mu.png" alt="Likelihood of Two Mu"/>
 </p>
+
+Class 1: Ranges from 1 to N1  
+Class 2: Ranges from N1+1 to N1+N2  
+
+
+Functions for μ1 and μ2 are the same as above.  
+
+$$
+\sigma^* = \frac{N_1}{N_1 + N_2} \sigma^1 + \frac{N_2}{N_1 + N_2} \sigma^2
+$$
+
+
+If all dims independent, we can use Naive Bayes Classifier:  
+
+$$
+P(x \mid C_1) =P(x_1 \mid C_1) \cdot P(x_2 \mid C_1) \ldots \cdot P(x_k \mid C_1) 
+$$
+
+
+we have  
+
+$$
+P(C_1 \mid x) = \frac{P(x \mid C_1) \cdot P(C_1)}{P(x \mid C_1) \cdot P(C_1) + P(x \mid C_2) \cdot P(C_2)}
+$$
+
+
+
+$$
+= \frac{1}{1 + \frac{P(x \mid C_2) \cdot P(C_2)}{P(x \mid C_1) \cdot P(C_1)}}
+$$
+
+
+let 
+
+$$
+z = \ln \frac{P(x \mid C_1) \cdot P(C_1)}{P(x \mid C_2) \cdot P(C_2)}
+$$
+
+
+so 
+
+
+$$
+= \frac{1}{1 + \exp(-z)} = \sigma(z)
+$$
+
+
+calculate z:  
+
+$$
+z = \ln \frac{P(x \mid C_1) \cdot P(C_1)}{P(x \mid C_2) \cdot P(C_2)} 
+$$
+
+
+$$
+ = \ln \frac{P(x \mid C_1)}{P(x \mid C_2)} + \ln \frac{P(C_1)}{P(C_2)}
+$$
+
+
+and 
+
+
+$$
+\frac{P(C_1)}{P(C_2)} = \frac{\frac{N_1}{N_1 + N_2}}{\frac{N_2}{N_1 + N_2}} = \frac{N_1}{N_2}
+$$
+
+
