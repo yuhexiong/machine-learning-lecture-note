@@ -311,19 +311,19 @@ $$
 By Gaussian Distribution  
 
 $$
-P(x|C_1) = \frac{1}{(2\pi)^{D/2}} \cdot \frac{1}{|\sigma_1|^{1/2}} \exp\left\{-\frac{1}{2} (x - \mu_1)^T (\sigma_1)^{-1} (x - \mu_1)\right\}
+P(x|C_1) = \frac{1}{(2\pi)^{D/2}} \cdot \frac{1}{|\sigma_1|^{1/2}} \cdot \exp \left( -\frac{1}{2} (x - \mu_1)^T (\sigma_1)^{-1} (x - \mu_1)\right)
 $$
 
 and 
 
 $$
-P(x|C_2) = \frac{1}{(2\pi)^{D/2}} \cdot \frac{1}{|\sigma_2|^{1/2}} \exp\left\{-\frac{1}{2} (x - \mu_2)^T (\sigma_2)^{-2} (x - \mu_2)\right\}
+P(x|C_2) = \frac{1}{(2\pi)^{D/2}} \cdot \frac{1}{|\sigma_2|^{1/2}} \exp\left (-\frac{1}{2} (x - \mu_2)^T (\sigma_2)^{-2} (x - \mu_2)\right)
 $$
 
 
 
 $$
-\frac{P(x|C_1)}{P(x|C_2)} = \ln \frac{|\sigma_1|^{1/2}}{|\sigma_2|^{1/2}} \cdot  \exp\left\{-\frac{1}{2} [(x - \mu_1)^T (\sigma_1)^{-1} (x - \mu_1) - (x - \mu_2)^T (\sigma_2)^{-2} (x - \mu_2) ]\right\}
+\frac{P(x|C_1)}{P(x|C_2)} = \ln \frac{|\sigma_1|^{1/2}}{|\sigma_2|^{1/2}} \cdot  \exp\left (-\frac{1}{2} [(x - \mu_1)^T (\sigma_1)^{-1} (x - \mu_1) - (x - \mu_2)^T (\sigma_2)^{-2} (x - \mu_2) ]\right )
 $$
 
 
