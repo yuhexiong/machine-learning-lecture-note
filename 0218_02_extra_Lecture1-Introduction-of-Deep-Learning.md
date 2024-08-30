@@ -260,7 +260,7 @@ P(x \mid C_1) =P(x_1 \mid C_1) \cdot P(x_2 \mid C_1) \ldots \cdot P(x_k \mid C_1
 $$
 
 
-we have  
+### Posterior Probability
 
 $$
 P(C_1 \mid x) = \frac{P(x \mid C_1) \cdot P(C_1)}{P(x \mid C_1) \cdot P(C_1) + P(x \mid C_2) \cdot P(C_2)}
@@ -308,3 +308,35 @@ $$
 $$
 
 
+By Gaussian Distribution  
+
+$$
+P(x|C_1) = \frac{1}{(2\pi)^{D/2}} \cdot \frac{1}{|\sigma_1|^{1/2}} \exp\left\{-\frac{1}{2} (x - \mu_1)^T (\sigma_1)^{-1} (x - \mu_1)\right\}
+$$
+
+and 
+
+$$
+P(x|C_2) = \frac{1}{(2\pi)^{D/2}} \cdot \frac{1}{|\sigma_2|^{1/2}} \exp\left\{-\frac{1}{2} (x - \mu_2)^T (\sigma_2)^{-2} (x - \mu_2)\right\}
+$$
+
+
+
+$$
+\frac{P(x|C_1)}{P(x|C_2)} = \ln \frac{|\sigma_1|^{1/2}}{|\sigma_2|^{1/2}} \cdot  \exp\left\{-\frac{1}{2} [(x - \mu_1)^T (\sigma_1)^{-1} (x - \mu_1) - (x - \mu_2)^T (\sigma_2)^{-2} (x - \mu_2) ]\right\}
+$$
+
+
+
+$$
+= (\mu_1 - \mu_2)^T \sigma^{-1} x - \frac{1}{2} (\mu_1)^T \sigma^{-1} \mu_1 + \frac{1}{2} (\mu_2)^T \sigma^{-1} \mu_2 + \ln \frac{N_1}{N_2}
+$$
+
+by let σ1 = σ2 = σ
+
+
+$$
+P(x|C_1) = \sigma(w \cdot x + b)
+$$
+
+called Logistic Regression  
