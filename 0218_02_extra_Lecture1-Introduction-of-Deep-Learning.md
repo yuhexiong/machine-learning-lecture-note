@@ -339,4 +339,49 @@ $$
 P(x|C_1) = \sigma(w \cdot x + b)
 $$
 
+where 
+
+$$
+w = (\mu_1 - \mu_2)^T \sigma^{-1}, b = - \frac{1}{2} (\mu_1)^T \sigma^{-1} \mu_1 + \frac{1}{2} (\mu_2)^T \sigma^{-1} \mu_2 + \ln \frac{N_1}{N_2}
+$$
+
 called Logistic Regression  
+
+
+
+
+### Logistic Regression
+
+#### Step 1. function set  
+#### Step 2. Goodness of function
+
+$$
+\begin{array}{cc}
+\text{Training Data} & \text{Class} \\
+x_1 & C_1 \\
+x_2 & C_1 \\
+x_3 & C_2 \\
+\vdots & \vdots \\
+x_N & C_1
+\end{array}
+$$
+
+This table illustrates that the data points belong to either class C1​ or class C2.  
+
+
+$$
+f_{w,b}(x) = P_{w,b}(C_1|x)
+$$
+
+
+$$
+L_{w,b}(x) = f_{w,b}(x_1) \cdot f_{w,b}(x_2) \cdot (1 - f_{w,b}(x_3)) \cdots f_{w,b}(x_N)
+$$
+
+
+$$
+w^*, b^* = \text{arg} \underset{w, b}{\text{max}} \, L(w, b)
+$$
+
+
+#### Step 3. Find the best function  
