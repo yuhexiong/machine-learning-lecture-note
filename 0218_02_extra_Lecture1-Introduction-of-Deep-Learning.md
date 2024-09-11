@@ -378,9 +378,27 @@ $$
 L_{w,b}(x) = f_{w,b}(x_1) \cdot f_{w,b}(x_2) \cdot (1 - f_{w,b}(x_3)) \cdots f_{w,b}(x_N)
 $$
 
+we have  
 
 $$
-w^*, b^* = \text{arg} \underset{w, b}{\text{max}} \, L(w, b)
+w^*, b^* = \text{arg} \underset{w, b}{\text{max}} \, L(w, b) \quad \text{equal to} \quad w^*, b^* = \text{arg} \underset{w, b}{\text{min}} \, -lnL(w, b)
+$$
+
+since
+
+$$
+-lnL(w, b) = -lnf_{w,b}(x_1) -lnf_{w,b}(x_2) -ln(1 - f_{w,b}(x_3)) - \cdots
+$$
+
+
+we write
+
+$$
+\hat{y} = 
+\begin{cases} 
+1 & \text{if class 1} \\ 
+0 & \text{if class 2} 
+\end{cases}
 $$
 
 
