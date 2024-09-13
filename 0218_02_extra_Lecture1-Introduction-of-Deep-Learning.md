@@ -380,9 +380,14 @@ $$
 
 we have  
 
-$$
+<!-- $$
 w^*, b^* = \text{arg} \underset{w, b}{\text{max}} \, L(w, b) \quad \text{equal to} \quad w^*, b^* = \text{arg} \underset{w, b}{\text{min}} \, -lnL(w, b)
-$$
+$$ -->
+
+
+<p align="center">
+  <img src="./images/0218/15_goodness_of_function.png" alt="Goodness of Function"/>
+</p>
 
 since
 
