@@ -408,3 +408,7 @@ $$
 
 
 #### Step 3. Find the best function  
+
+$$
+\frac{\partial-lnL}{\partial w_i} = \sum_{n}-[\hat{y}\frac{\partial lnf_{w,b}(x^n)}{\partial w_i} + (1 - \hat{y})\frac{\partial ln(1-f_{w,b}(x^n))}{\partial w_i}]
+$$
