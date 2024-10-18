@@ -412,3 +412,21 @@ $$
 $$
 \frac{\partial-lnL}{\partial w_i} = \sum_{n}-[\hat{y}\frac{\partial lnf_{w,b}(x^n)}{\partial w_i} + (1 - \hat{y})\frac{\partial ln(1-f_{w,b}(x^n))}{\partial w_i}]
 $$
+
+we have
+
+$$
+\frac{\partial lnf_{w,b}(x)}{\partial w_i} = \frac{\partial lnf_{w,b}(x)}{\partial z} \cdot \frac{\partial z}{\partial w_i}
+$$
+
+where 
+
+$$
+\frac{\partial z}{\partial w_i} = x_i
+$$
+
+and
+
+$$
+\frac{\partial lnf_{w,b}(x)}{\partial z} = \frac{\partial ln \sigma(x)}{\partial z} = \frac{1}{\sigma(z)} \cdot \frac{\partial \sigma(z)}{\partial z} = \frac{1}{\sigma(z)} \cdot \sigma(z) \cdot (1 - \sigma(z)) = 1 - \sigma(z)
+$$
