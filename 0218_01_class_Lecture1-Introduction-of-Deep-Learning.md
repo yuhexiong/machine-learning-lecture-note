@@ -1,6 +1,6 @@
 # Lecture 1 Introduction of Deep Learning Class
 
-Full course Syllabus reference to [Machine Learing 2022 Spring](https://speech.ee.ntu.edu.tw/~hylee/ml/2022-spring.php?fbclid=IwAR2rE3UFymIOeTEoEzyZBhO-5vbpYpyw1Ho_KHO8cmwVd0_f7nI3iYunW4A)  
+Full course Syllabus reference to [Machine Learning 2022 Spring](https://speech.ee.ntu.edu.tw/~hylee/ml/2022-spring.php?fbclid=IwAR2rE3UFymIOeTEoEzyZBhO-5vbpYpyw1Ho_KHO8cmwVd0_f7nI3iYunW4A)  
 Note for lecture(Hung-yi Lee YouTube)  
 (1) [【機器學習2021】預測本頻道觀看人數 (上) - 機器學習基本概念簡介](https://www.youtube.com/watch?v=Ye018rCVvOo)  
 (2) [【機器學習2021】預測本頻道觀看人數 (下) - 深度學習基本概念簡介](https://www.youtube.com/watch?v=bHcJCp2Fyxs)  
