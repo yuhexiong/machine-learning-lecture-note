@@ -37,27 +37,38 @@ Each token has a finite number of possible values, yet from these, infinite poss
 
 Tokens are generated one at a time in a fixed order:
 
-- Given input:
-  $$
-  x_1, x_2, \ldots, x_j, \ldots \rightarrow y_1
-  $$
-- Then:
-  $$
-  x_1, x_2, \ldots, x_j, \ldots, y_1 \rightarrow y_2
-  $$
-- Then:
-  $$
-  x_1, x_2, \ldots, x_j, \ldots, y_1, y_2 \rightarrow y_3
-  $$
-- ...
-- Until:
-  $$
-  x_1, x_2, \ldots, x_j, \ldots, y_1, y_2, \ldots, y_{T-1} \rightarrow y_T
-  $$
-- And finally:
-  $$
-  x_1, x_2, \ldots, x_j, \ldots, y_1, y_2, \ldots, y_T \rightarrow \text{end}
-  $$
+Given input:
+
+$$
+x_1, x_2, \ldots, x_j, \ldots \rightarrow y_1
+$$
+
+
+Then:
+
+$$
+x_1, x_2, \ldots, x_j, \ldots, y_1 \rightarrow y_2
+$$
+
+Then:
+
+$$
+x_1, x_2, \ldots, x_j, \ldots, y_1, y_2 \rightarrow y_3
+$$
+
+...
+
+Until:
+
+$$
+x_1, x_2, \ldots, x_j, \ldots, y_1, y_2, \ldots, y_{T-1} \rightarrow y_T
+$$
+
+And finally:
+
+$$
+x_1, x_2, \ldots, x_j, \ldots, y_1, y_2, \ldots, y_T \rightarrow \text{end}
+$$
 
 This process is known as **Autoregressive Generation**:  
 Token generation is done sequentially, one token at a time.

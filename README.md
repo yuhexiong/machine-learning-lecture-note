@@ -11,7 +11,7 @@
 Full course syllabus reference to [Machine Learning 2022 Spring](https://speech.ee.ntu.edu.tw/~hylee/ml/2022-spring.php?fbclid=IwAR2rE3UFymIOeTEoEzyZBhO-5vbpYpyw1Ho_KHO8cmwVd0_f7nI3iYunW4A)  
 
 ### Note of Lecture
-**Lecture 1 Introduction of Deep Learning**: [Class](/0218_01_class_Lecture1-Introduction-of-Deep-Learning.md) | [Extra](0218_02_extra_Lecture1-Introduction-of-Deep-Learning.md)
+**Lecture 1 Introduction of Deep Learning**: [Class](./2022/0218_01_class_Lecture1-Introduction-of-Deep-Learning.md) | [Extra](./2022/0218_02_extra_Lecture1-Introduction-of-Deep-Learning.md)
 
 
 ## 2025
