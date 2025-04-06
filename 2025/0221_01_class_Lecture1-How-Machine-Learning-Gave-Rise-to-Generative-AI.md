@@ -72,3 +72,101 @@ $$
 
 This process is known as **Autoregressive Generation**:  
 Token generation is done sequentially, one token at a time.
+
+
+We can describe the generative process without distinguishing between input `x` and output `y`.  
+Even if the base domains of `x` and `y` are different, they can be unified into a single sequence:
+
+$$
+\{z_1, z_2, \ldots, z_{t-1}\} \rightarrow z_t
+$$
+
+This can be represented as a function (a Neural Network) that outputs a probability distribution over the next token.
+
+
+## Deep Learning
+
+Using multiple layers leads to better learning performance.
+
+Letting the machine "think" multiple times is another form of depth.  
+While the number of layers is limited, the model can reason multiple times.  
+This concept is called **Testing Time Scaling**.
+
+**Implementation:**  
+Replace the language model's `end` token with a `wait` token to control the output length of the language model.
+
+
+- **Transformer**: the **Self-Attention layer** requires access to all tokens before generating an answer.  
+  Therefore, the sequence length must be limited.
+
+- **Mamba:** (To be discussed later)
+
+
+### Architecture and Parameters
+
+- The **architecture** (including internal hyperparameters) is defined by humans.
+- The **parameters** are learned from training data.
+
+When a model is described as **7B** or **70B**, it refers to the number of parameters.
+
+- The number of parameters is part of the model's architecture.
+- The **values** of the parameters must be learned from training data.
+
+The generative function can be written as:
+
+$$
+z_t = f_\theta(z_1, z_2, \ldots, z_{t-1})
+$$
+
+We aim to find a parameter set \( \theta \) such that the function \( f \) produces a probability distribution where the correct token has the highest probability according to the training data.
+
+## Multitask Model
+
+Language translation no longer requires training for each language pair.  
+The model learns to convert inputs into an internal language representation.  
+Various functionalities can be integrated into a single model.
+
+### 1. Encoder-based Models (2018–2019)
+
+- Input: Text  
+- Processing:  
+  Text → **Encoder** → Vector → Specialized Model → Summary / Translation  
+- Well-known models: **ELMO**, **BERT**, **ERNIE**
+
+
+### 2. Full Text Generation (2020–2022)
+
+- Input: Text  
+- Processing:  
+  Text → **Model** \( f_theta \) → Text  
+- Fine-tuning is common:
+  - Text → Model \( f_theta' \) → Summary  
+  - Text → Model \( f_theta'' \) → Translation  
+- Well-known model: **GPT-3**
+
+
+### 3. Instruction-following Models (2023–)
+
+- Same architecture, same parameters  
+- Input: Text + Prompt  
+- Processing:  
+  Text → Model (with prompt) → Summary / Translation  
+- Well-known models: **ChatGPT**, **LLaMA**, **Claude**, **Gemini**, **DeepSeek**
+
+
+## Life-long Learning
+
+Ways to modify a model’s behavior:
+
+### Temporary Modification
+- **Using Prompts**: Temporarily alters the model’s behavior by guiding its response.
+
+### Permanent Modification
+1. **Fine-tuning**:  
+   Add new training data. May degrade the model's original capabilities.
+
+2. **Model Editing**:  
+   Manually adjust specific parameters of the model.
+
+3. **Model Merging**
+
