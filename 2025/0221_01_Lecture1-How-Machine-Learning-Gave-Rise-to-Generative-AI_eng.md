@@ -119,7 +119,7 @@ $$
 
 We aim to find a parameter set \( \theta \) such that the function \( f \) produces a probability distribution where the correct token has the highest probability according to the training data.
 
-## Multitask Model
+## Multi-Task Model
 
 Language translation no longer requires training for each language pair.  
 The model learns to convert inputs into an internal language representation.  
