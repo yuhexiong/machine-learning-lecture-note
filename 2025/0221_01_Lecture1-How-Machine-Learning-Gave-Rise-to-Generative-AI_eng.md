@@ -1,7 +1,7 @@
 # Lecture 1 How Machine Learning Gave Rise to Generative AI
 
 Full course syllabus reference to [Machine Learning 2025](https://course.ntu.edu.tw/courses/113-2/41735)  
-Note for lecture(Hung-yi Lee YouTube)  
+Note for lecture （Hung-yi Lee YouTube）  
 (1) [【生成式AI時代下的機器學習(2025)】第一講：一堂課搞懂生成式人工智慧的技術突破與未來發展](https://www.youtube.com/watch?v=QLiKmca4kzI&list=PLJV_el3uVTsNZEFAdQsDeOdzAaHTca2Gi)  
 
 
@@ -31,7 +31,6 @@ Each token has a finite number of possible values, yet from these, infinite poss
 > "Those tokens were words, some of the tokens of course could now be images, or charts, or tables, songs... speech, videos. Those tokens could be anything."  
 > — *Jensen Huang*
 
----
 
 ## Autoregressive Generation
 
