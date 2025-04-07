@@ -94,7 +94,7 @@ $$
 
 - **Mamba:**（稍後討論）
 
-### Architecture and Parameters
+### 架構（Architecture）與參數設定（Parameters）
 
 - **architecture**（包括內部的超參數）由人類定義。
 - **parameters** 是從訓練資料中學習出來的。
