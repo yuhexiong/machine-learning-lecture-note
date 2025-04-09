@@ -19,4 +19,5 @@ Full course syllabus reference to [Machine Learning 2022 Spring](https://speech.
 Full course syllabus reference to [Machine Learning 2025](https://course.ntu.edu.tw/courses/113-2/41735)  
 
 ### Note of Lecture
-**Lecture 1 How Machine Learning Gave Rise to Generative AI**: [English](./2025/0221_01_Lecture1-How-Machine-Learning-Gave-Rise-to-Generative-AI_eng.md) | [Chinese](./2025/0221_01_Lecture1-How-Machine-Learning-Gave-Rise-to-Generative-AI_ch.md)
+**Lecture 1 How Machine Learning Gave Rise to Generative AI**: [English](./2025/0221_01_Lecture1-How-Machine-Learning-Gave-Rise-to-Generative-AI_eng.md) | [Chinese](./2025/0221_01_Lecture1-How-Machine-Learning-Gave-Rise-to-Generative-AI_ch.md)  
+**Lecture 2 From Tuning Parameters to Orchestrating AI Agents' Workflow**: [English](./2025/0307_02_Lecture2-From-Tuning-Parameters-to-Orchestrating-AI-Agents'-Workflow_eng.md) | [Chinese](./2025/0307_02_Lecture2-From-Tuning-Parameters-to-Orchestrating-AI-Agents'-Workflow_ch.md)  
