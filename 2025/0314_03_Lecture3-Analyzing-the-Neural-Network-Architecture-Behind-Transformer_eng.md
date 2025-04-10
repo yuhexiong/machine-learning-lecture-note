@@ -8,3 +8,62 @@ Note for lecture （Hung-yi Lee YouTube）
 ## Transformer
 
 ![transformer](./images/0314/01_transformer.png)
+
+
+### Single Neuron
+
+Within a Transformer layer, there are sub-layers:
+- Self-attention layer  
+- Feed-forward layer (applies independently to each token)
+
+Single neuron performs:  
+```
+Vector → Weighted Sum → Activation Function → Output Vector
+```
+
+#### Analyze what a neuron does:
+- Observe what happens when the neuron is activated  
+- Remove the neuron and see what effect disappears  
+   - How to remove it: set its value to 0 or to an average  
+- Activate the neuron at different levels and observe changes
+
+
+#### Conclusion
+- Modifying a single neuron usually does not change the overall model output, only shifts some probabilities  
+- A task is typically managed by multiple neurons
+  - Tasks are likely handled by combinations of neurons. With 4096 neurons, there are up to 2⁴⁰⁹⁶ possible combinations.
+  
+- A single neuron often participates in multiple tasks  
+
+
+
+### Layer of Neurons
+
+**Function Vector**: A vector representing a specific semantic or functional feature.
+
+The output of a layer is called a **representation**.  
+If the representation is close to a function vector, the function may be triggered.
+
+```
+Representation ≈ Function Vector + Other Function Vectors
+```
+
+
+#### Estimate a function vector
+
+Observe cases where the function is triggered = `function vector` + `other function vectors`
+
+Observe cases where the function is not triggered = `other function vectors'`
+
+Assume average of `other function vectors` and average of `other function vectors'` are similar, so they cancel out.
+
+Then:  
+
+```
+Function Vector ≈ (Average of activated representations) − (Average of non-activated representations)
+```
+
+#### Validation
+
+Inject the derived `function vector` into the network and check if the intended function is activated.
+

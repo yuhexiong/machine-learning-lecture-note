@@ -147,7 +147,6 @@ Drawbacks: High execution costs, some actions cannot be revisited, inconvenient 
 
 - Simulation-Based: Test potential paths in a simulated environment  
 
-##### Optimization Methods
-
-- Filter low-probability options  
-- Build a World Model: Supplement the model's understanding of the environment
+Optimization Methods:  
+(1) Filter low-probability options  
+(2) Build a World Model: Supplement the model's understanding of the environment
