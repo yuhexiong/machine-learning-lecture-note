@@ -63,7 +63,41 @@ Then:
 Function Vector ≈ (Average of activated representations) − (Average of non-activated representations)
 ```
 
-#### Validation
+Inject the derived `function vector` into the network and check if the intended function is activated.  
 
-Inject the derived `function vector` into the network and check if the intended function is activated.
+
+
+We can assume that each observed representation is a linear combination of **functional vectors**:
+
+$$
+\begin{aligned}
+h_1 &= \alpha_{11} v_1 + \alpha_{12} v_2 + \alpha_{13} v_3 + \cdots + \alpha_{1K} v_K + e_1 \\
+h_2 &= \alpha_{21} v_1 + \alpha_{22} v_2 + \alpha_{23} v_3 + \cdots + \alpha_{2K} v_K + e_2 \\
+&\vdots \\
+h_N &= \alpha_{N1} v_1 + \alpha_{N2} v_2 + \alpha_{N3} v_3 + \cdots + \alpha_{NK} v_K + e_N
+\end{aligned}
+$$
+
+We can make some assumptions:  
+The error terms $e_1, e_2, \ldots, e_N$ should be as small as possible.
+
+So we minimize the reconstruction loss:
+
+$$
+L = \sum_{n=1}^{N} |e_n|^2
+$$
+
+However, minimizing this alone can lead to trivial solutions (e.g., one-hot vectors).  
+Thus, we need additional assumptions — for example, we prefer to use as few functional vectors as possible each time, meaning that the coefficients $\alpha$ should be mostly zero.
+
+We add a sparsity penalty:
+
+$$
+L = \sum_{n=1}^{N} |e_n|^2 + \lambda \sum_{n=1}^{N} \sum_{k=1}^{K} |\alpha_{nk}|
+$$
+
+Then we minimize this new objective.
+
+This can be solved using a **Sparse Auto-Encoder (SAE)**.
+
 
