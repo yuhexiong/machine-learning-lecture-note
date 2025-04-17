@@ -65,7 +65,7 @@ C \Rightarrow \mathcal{L} = \sum C^n \quad \text{gradient descent}
 $$
 
 #### Universal Approximation Theorem
-Any continuous f
+Any continuous $f$
 
 $$
 f: \mathcal{R}^N \rightarrow \mathcal{R}^M
@@ -88,7 +88,7 @@ $$
 </p>
 
 
-The derivative of the cost \( c \) with respect to weight \( w \):
+The derivative of the cost $c$ with respect to weight $w$:
 
 $$
 \frac{\partial c}{\partial w} = \frac{\partial z}{\partial w} \cdot \frac{\partial c}{\partial z}
@@ -117,7 +117,7 @@ $$
 \text{where} \quad \frac{\partial a}{\partial z} \quad \text{ is the sigmoid derivative.}
 $$
 
-Gradient of \( c \) with respect to \( a \):
+Gradient of $c$ with respect to $a$:
 
 $$
 \frac{\partial c}{\partial a} = \frac{\partial z'}{\partial a} \cdot \frac{\partial c}{\partial z'} + \frac{\partial z''}{\partial a} \cdot \frac{\partial c}{\partial z''}

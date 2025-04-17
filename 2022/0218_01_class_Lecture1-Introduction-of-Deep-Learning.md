@@ -20,7 +20,7 @@ S(t) = \frac{1}{1 + e^{-t}}
 $$
 
 
-The equation for the output \( y \) is:
+The equation for the output $y$ is:
 
 $$
 y = c\cdot\frac{1}{1 + e^{-(b+w \cdot x_1)}}
@@ -28,10 +28,10 @@ y = c\cdot\frac{1}{1 + e^{-(b+w \cdot x_1)}}
 $$
 
 where:
-- \( w \): slopes
-- \( b \): shift
-- \( c \): height
-- \( x \): feature
+- $w$ : slopes
+- $b$ : shift
+- $c$ : height
+- $x$ : feature
 
 ## Hard Sigmoid
 
@@ -53,9 +53,9 @@ $$
 y = b + \sum_{i} c_i \cdot \text{sigmoid}\left(b_i + w_i \cdot x_1\right)
 $$
 
-where \(x_1\) varies.
+where $x_1$ varies.
 
-For different \(x_j\), we have:
+For different $x_j$, we have:
 
 $$
 r = b + \sum_{j} \left(w_j \cdot x_j\right), \quad a = \text{sigmoid}(r) = \frac{1}{1 + e^{-r}}
@@ -78,24 +78,24 @@ Here's a polished and organized version of your notes:
 
 ### Define Loss Function
 
-The loss function \( L \) is defined as the average of all errors:
+The loss function $L$ is defined as the average of all errors:
 
 $$
 L = \frac{1}{N} \cdot \sum_{n} e_n
 $$
 
-where \( N \) is the number of observations and \( e_n \) is the error for the n-th observation.
+where $N$ is the number of observations and $e_n$ is the error for the n-th observation.
 
 
-### Finding the Optimal \(θ\)
+### Finding the Optimal $\theta$
 
-To find the parameter \(θ\) that minimizes the loss function \(L\), we solve:
+To find the parameter $\theta$ that minimizes the loss function $L$, we solve:
 
 $$
 \theta^* = \text{arg} \underset{\theta}{\text{min}} \, L
 $$
 
-where \(θ^*\) is the value of theta that minimizes \(L\).
+where $\theta^*$ is the value of theta that minimizes $L$.
 
 
 **Training:**
@@ -104,7 +104,7 @@ $$
 y = f_{\theta}(x)
 $$
 
-Define \(L(θ)\), find \( θ^* \)
+Define $L(\theta)$, find $\theta^*$
 
 
 $$
@@ -113,7 +113,7 @@ $$
 
 ### Gradient Computation
 
-To optimize the loss function, compute the gradient of \(L\) with respect to \(θ\) at the initial guess \(θ^0\):
+To optimize the loss function, compute the gradient of $L$ with respect to $\theta$ at the initial guess $\theta^0$:
 
 $$
 g = \nabla L(\theta^0) = \begin{bmatrix}
@@ -150,7 +150,7 @@ $$
 \theta^1 \leftarrow \theta^0 - \eta g \quad \text{(update)}
 $$
 
-In fact, the batches have been randomly divided, and batch 1 is used to calculate L^1 to obtain θ^1, batch 2 is used to calculate L^2 to obtain θ^2...  
+In fact, the batches have been randomly divided, and batch 1 is used to calculate $L^1$ to obtain $\theta^1$, batch 2 is used to calculate $L^2$ to obtain $\theta^2$...  
 1 epoch = see all the batches once.  
 
 ### Rectified Linear Unit(ReLU)
@@ -163,7 +163,7 @@ $$
 \Rightarrow cmax(0, b + w \cdot x_1)
 $$
 
-2ReLU ⇒ Hard Sigmoid
+2 ReLU ⇒ Hard Sigmoid
 
 <p align="center">
   <img src="./images/0218/06_combine_relu.png" alt="Combine Relu"/>

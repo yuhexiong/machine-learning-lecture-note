@@ -19,7 +19,7 @@ $$
 y = \{y_1, y_2, \ldots, y_i, \ldots\}
 $$
 
-Each `y_i` is typically called a **token**.
+Each $y_i$ is typically called a **token**.
 
 A token can represent:
 - a character
@@ -117,7 +117,7 @@ $$
 z_t = f_\theta(z_1, z_2, \ldots, z_{t-1})
 $$
 
-We aim to find a parameter set \( \theta \) such that the function \( f \) produces a probability distribution where the correct token has the highest probability according to the training data.
+We aim to find a parameter set $\theta$ such that the function $f$ produces a probability distribution where the correct token has the highest probability according to the training data.
 
 ## Multi-Task Model
 
@@ -137,10 +137,10 @@ Various functionalities can be integrated into a single model.
 
 - Input: Text  
 - Processing:  
-  Text → **Model** \( f_theta \) → Text  
+  Text → **Model** $f_\theta$ → Text  
 - Fine-tuning is common:
-  - Text → Model \( f_theta' \) → Summary  
-  - Text → Model \( f_theta'' \) → Translation  
+  - Text → Model $f_\theta'$ → Summary  
+  - Text → Model $f_\theta''$ → Translation  
 - Well-known model: **GPT-3**
 
 
