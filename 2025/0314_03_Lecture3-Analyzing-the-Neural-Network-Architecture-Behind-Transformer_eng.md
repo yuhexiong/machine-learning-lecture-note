@@ -101,3 +101,6 @@ Then we minimize this new objective.
 This can be solved using a **Sparse Auto-Encoder (SAE)**.
 
 
+### Group of Neurons
+
+![Function](./images/0314/02_function.png)
